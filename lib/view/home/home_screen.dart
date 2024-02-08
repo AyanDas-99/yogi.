@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yogi/view/home/components/day_selector.dart';
 import 'package:yogi/view/home/components/horizontal_posters_list.dart';
 import 'package:yogi/view/home/components/top_nav.dart';
 
@@ -24,6 +25,8 @@ class _HomeScreenState extends State<HomeScreen> {
           TopNav(),
           SizedBox(height: 15),
           HorizontalPostersList(),
+          SizedBox(height: 15),
+          DaySelector(),
         ],
       ),
     );
