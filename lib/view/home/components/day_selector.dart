@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:yogi/view/home/components/day_button.dart';
 
 class DaySelector extends StatefulWidget {
@@ -39,7 +40,7 @@ class _DaySelectorState extends State<DaySelector> {
               selected: _selected == index,
             ),
           ),
-        ),
+        ).animate(interval: 150.ms).fade(duration: 300.ms),
       ),
     );
   }

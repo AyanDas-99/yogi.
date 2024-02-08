@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:yogi/view/yogi_themes.dart';
 
@@ -12,6 +13,9 @@ class PlanSection extends StatelessWidget {
       child: Row(
         children: [
           Expanded(
+            /*
+             Card 1
+            */
             child: Card(
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
@@ -77,13 +81,17 @@ class PlanSection extends StatelessWidget {
                   ],
                 ),
               ),
-            ),
+            ).animate().flip(
+                duration: 400.ms, direction: Axis.horizontal, delay: 100.ms),
           ),
           Expanded(
             child: Column(
               children: [
                 Expanded(
                   flex: 3,
+                  /*
+             Card 2
+            */
                   child: Card(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
@@ -143,10 +151,14 @@ class PlanSection extends StatelessWidget {
                         ],
                       ),
                     ),
-                  ),
+                  ).animate().flip(direction: Axis.horizontal),
                 ),
                 Expanded(
                   flex: 1,
+                  /*
+             Card 3
+            */
+
                   child: Card(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
@@ -195,7 +207,7 @@ class PlanSection extends StatelessWidget {
                         ),
                       ],
                     ),
-                  ),
+                  ).animate().flip(),
                 ),
               ],
             ),

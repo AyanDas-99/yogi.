@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:yogi/view/home/components/day_selector.dart';
 import 'package:yogi/view/home/components/horizontal_posters_list.dart';
 import 'package:yogi/view/home/components/plan_section.dart';
@@ -20,13 +21,13 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       controller: widget.scrollController,
-      child: const Column(
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           TopNav(),
           SizedBox(height: 15),
-          HorizontalPostersList(),
+          HorizontalPostersList().animate().fadeIn(),
           SizedBox(height: 15),
           DaySelector(),
           SizedBox(height: 18),
