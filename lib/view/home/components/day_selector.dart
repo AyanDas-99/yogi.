@@ -25,7 +25,6 @@ class _DaySelectorState extends State<DaySelector> {
   Widget build(BuildContext context) {
     return Container(
       height: 73,
-      padding: const EdgeInsets.all(3),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: List.generate(

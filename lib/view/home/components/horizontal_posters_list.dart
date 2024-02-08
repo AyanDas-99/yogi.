@@ -10,7 +10,7 @@ class HorizontalPostersList extends StatelessWidget {
     return CarouselSlider.builder(
       itemCount: 4,
       itemBuilder: (context, index, realIndex) => const Padding(
-        padding: EdgeInsets.symmetric(horizontal: 10),
+        padding: EdgeInsets.symmetric(horizontal: 4),
         child: Poster(
             title: "Daily Challenge",
             desc: "Do your plan before 09.00 AM",

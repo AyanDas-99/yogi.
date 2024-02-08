@@ -90,8 +90,11 @@ class Poster extends StatelessWidget {
             ),
             Expanded(
               flex: 2,
-              child: Image(
-                image: image,
+              child: Transform.scale(
+                scale: 1.4,
+                child: Image(
+                  image: image,
+                ),
               ),
             )
           ],

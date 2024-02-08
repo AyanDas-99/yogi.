@@ -16,7 +16,8 @@ class DayButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 3),
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+      padding: const EdgeInsets.symmetric(vertical: 4),
+      width: 48,
       decoration: BoxDecoration(
           color: selected ? YogiThemes.yogiBlack : YogiThemes.yogiWhite,
           borderRadius: BorderRadius.circular(20),
