@@ -14,12 +14,10 @@ class PlanSection extends StatelessWidget {
         children: [
           Expanded(
             /*
-             Card 1
+             Card 01
             */
             child: Card(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20)),
-              color: Color.fromARGB(255, 255, 204, 64),
+              color: YogiThemes.yogiOrange,
               child: Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: Column(
@@ -93,8 +91,6 @@ class PlanSection extends StatelessWidget {
              Card 2
             */
                   child: Card(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20)),
                     color: YogiThemes.yogiBlue,
                     child: Padding(
                       padding: const EdgeInsets.all(15.0),
@@ -160,8 +156,6 @@ class PlanSection extends StatelessWidget {
             */
 
                   child: Card(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20)),
                     color: const Color.fromARGB(255, 255, 168, 232),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,

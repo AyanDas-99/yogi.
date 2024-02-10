@@ -30,11 +30,11 @@ class _HomeScreenState extends State<HomeScreen> {
           HorizontalPostersList().animate().fadeIn(),
           SizedBox(height: 15),
           DaySelector(),
-          SizedBox(height: 18),
+          SizedBox(height: 25),
           Text("Your Plan", style: TextStyle(fontSize: 28)),
           SizedBox(height: 15),
           PlanSection(),
-          SizedBox(height: 25),
+          SizedBox(height: 70),
         ],
       ),
     );

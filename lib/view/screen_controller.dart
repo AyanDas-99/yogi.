@@ -60,7 +60,9 @@ class _ScreenControllerState extends State<ScreenController> {
       ),
       const CatalogScreen(),
       const StatsScreen(),
-      const ProfileScreen(),
+      ProfileScreen(
+        scrollController: scrollController,
+      ),
     ];
 
     return Material(
